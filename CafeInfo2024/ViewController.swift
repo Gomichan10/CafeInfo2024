@@ -11,11 +11,16 @@ import GooglePlaces
 
 class ViewController: UIViewController, CLLocationManagerDelegate,GMSMapViewDelegate{
     
+    @IBOutlet weak var coffeeMapView: UIView!
+    @IBOutlet weak var centerButton: UIButton!
+    @IBOutlet weak var mypageButton: UIButton!
+    @IBOutlet weak var addSpotButton: UIButton!
+    
     var mapView: GMSMapView!
     var locationManager = CLLocationManager()
     var isTrackingUserLocation: Bool = true
     var tapCheck: Bool = true
-    let centerButton = UIButton(frame: CGRect(x: 300, y: 600, width: 60, height: 60))
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,17 +34,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate,GMSMapViewDele
     
     func setupMap() {
         let camera = GMSCameraPosition.camera(withLatitude: 35.6812226, longitude: 139.7670594, zoom: 12.0)
-        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView = GMSMapView.map(withFrame: coffeeMapView.bounds, camera: camera)
         mapView.isMyLocationEnabled = true
-        mapView.delegate = self
-        view = mapView
+        coffeeMapView.addSubview(mapView)
         
-        centerButton.backgroundColor = .white
-        centerButton.tintColor = .black
-        centerButton.setImage(UIImage(systemName: "figure.stand"), for: .normal)
         centerButton.addTarget(self, action: #selector(centerMapOnUserButtonClicked), for: .touchUpInside)
-        centerButton.layer.cornerRadius = 30.0
-        self.view.addSubview(centerButton)
+        centerButton.layer.cornerRadius = 37.0
+        coffeeMapView.addSubview(centerButton)
+        
+        mypageButton.layer.cornerRadius = 37.0
+        coffeeMapView.addSubview(mypageButton)
+        
+        addSpotButton.layer.cornerRadius = 30.0
+        coffeeMapView.addSubview(addSpotButton)
     }
     
     @objc func centerMapOnUserButtonClicked() {

@@ -1,24 +1,344 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="CafeInfo2024" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ym-0b-a44">
+                                <rect key="frame" x="0.0" y="109" width="393" height="743"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32f-VI-7Bg">
+                                        <rect key="frame" x="311" y="600" width="74" height="74"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="74" id="Tuh-2Y-hPt"/>
+                                            <constraint firstAttribute="height" constant="74" id="r6J-wG-lba"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
+                                            <imageReference key="image" image="figure.stand" catalog="system" variableValue="0.0"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTK-aB-Dun">
+                                        <rect key="frame" x="8" y="600" width="74" height="74"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="74" id="lM2-eq-BBq"/>
+                                            <constraint firstAttribute="height" constant="74" id="lcN-Q9-o7b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="">
+                                            <imageReference key="image" image="person.crop.circle" catalog="system" variableValue="0.0"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgV-uP-VON">
+                                        <rect key="frame" x="91.666666666666686" y="650" width="210" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Dp0-iK-0ZS"/>
+                                            <constraint firstAttribute="width" constant="210" id="zdS-cO-mo9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="tintColor" red="0.99607843159999998" green="0.97254902119999997" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Add Spot"/>
+                                        <connections>
+                                            <segue destination="x1S-fZ-ioX" kind="show" id="Ejk-ue-5fC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstItem="kgV-uP-VON" firstAttribute="top" secondItem="8Ym-0b-a44" secondAttribute="top" constant="650" id="Bf8-br-6gP"/>
+                                    <constraint firstItem="ZTK-aB-Dun" firstAttribute="leading" secondItem="8Ym-0b-a44" secondAttribute="leading" constant="8" id="Mw4-gf-jvc"/>
+                                    <constraint firstAttribute="trailing" secondItem="32f-VI-7Bg" secondAttribute="trailing" constant="8" id="jLS-1h-BjC"/>
+                                    <constraint firstItem="32f-VI-7Bg" firstAttribute="top" secondItem="8Ym-0b-a44" secondAttribute="top" constant="600" id="mna-NF-0E1"/>
+                                    <constraint firstItem="ZTK-aB-Dun" firstAttribute="top" secondItem="8Ym-0b-a44" secondAttribute="top" constant="600" id="rKM-No-dRG"/>
+                                    <constraint firstItem="kgV-uP-VON" firstAttribute="centerX" secondItem="8Ym-0b-a44" secondAttribute="centerX" id="wcd-W6-f3U"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COFFEE MAP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLr-Vs-vTg">
+                                <rect key="frame" x="117" y="50" width="159" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <color key="textColor" red="0.99607843159999998" green="0.97254902119999997" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8Ym-0b-a44" secondAttribute="bottom" id="8i1-o1-WG5"/>
+                            <constraint firstItem="8Ym-0b-a44" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GBd-oE-sgf"/>
+                            <constraint firstItem="8Ym-0b-a44" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="T11-Y6-Obe"/>
+                            <constraint firstItem="bLr-Vs-vTg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="b9O-oE-dI4"/>
+                            <constraint firstItem="bLr-Vs-vTg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k8n-c7-o4f"/>
+                            <constraint firstItem="8Ym-0b-a44" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m7W-fW-2Yu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addSpotButton" destination="kgV-uP-VON" id="J0T-6v-rll"/>
+                        <outlet property="centerButton" destination="32f-VI-7Bg" id="M9W-PR-ub9"/>
+                        <outlet property="coffeeMapView" destination="8Ym-0b-a44" id="oLq-MD-mej"/>
+                        <outlet property="mypageButton" destination="ZTK-aB-Dun" id="hl5-2o-JkS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="63.358778625954194" y="-34.507042253521128"/>
+        </scene>
+        <!--Add Spot View Controller-->
+        <scene sceneID="qwG-cV-0Zg">
+            <objects>
+                <viewController id="x1S-fZ-ioX" customClass="AddSpotViewController" customModule="CafeInfo2024" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UaT-iv-8iT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コーヒー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAD-mO-XEc">
+                                <rect key="frame" x="149.66666666666666" y="20" width="94" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.97179658820000003" blue="0.89194456379999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0B-2O-dsx" userLabel="coffee1">
+                                <rect key="frame" x="51" y="58" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeCoffeeStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="HuO-Ty-RuZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2f-Sx-gmB" userLabel="coffee2">
+                                <rect key="frame" x="111" y="58" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeCoffeeStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="EeM-ru-jNh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbU-We-2LM" userLabel="coffee3">
+                                <rect key="frame" x="171" y="58" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeCoffeeStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="uyX-Du-eG6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6H-nc-tcq" userLabel="coffee4">
+                                <rect key="frame" x="231" y="58" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeCoffeeStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="lUe-sp-pbB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qww-q3-MA3" userLabel="coffee5">
+                                <rect key="frame" x="291" y="58" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeCoffeeStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="QVk-fi-wcz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サービス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYp-nv-5q0">
+                                <rect key="frame" x="149.66666666666666" y="111" width="94" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.97179658820000003" blue="0.89194456379999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouN-jk-SjW" userLabel="service1">
+                                <rect key="frame" x="51" y="149" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeServiceStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="aDI-jv-29p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQL-nO-z3U" userLabel="service2">
+                                <rect key="frame" x="111" y="149" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeServiceStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="h3H-eG-74G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqo-sH-Gzb" userLabel="service3">
+                                <rect key="frame" x="171" y="149" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeServiceStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="PFv-Gy-Yfj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBm-oN-dcb" userLabel="service4">
+                                <rect key="frame" x="231" y="149" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeServiceStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="zEJ-M4-9sC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nl-Ef-YOu" userLabel="service5">
+                                <rect key="frame" x="291" y="149" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeServiceStar:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="hDk-Fk-D76"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雰囲気" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfH-zQ-2Sf">
+                                <rect key="frame" x="161" y="202" width="71" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.97179658820000003" blue="0.89194456379999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TK6-0g-tHu" userLabel="atmosphere1">
+                                <rect key="frame" x="51" y="240" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeAtmosphereStar1:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="npp-sS-8eA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygo-QQ-ADl" userLabel="atmosphere2">
+                                <rect key="frame" x="111" y="240" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeAtmosphereStar1:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="Vhh-rR-bhW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB0-ek-isV" userLabel="atmosphere3">
+                                <rect key="frame" x="171" y="240" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeAtmosphereStar1:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="VrK-Bm-8f5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAT-6g-n9C" userLabel="atmosphere4">
+                                <rect key="frame" x="231" y="240" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeAtmosphereStar1:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="0jd-LO-hb3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyu-7U-sFU" userLabel="atmosphere5">
+                                <rect key="frame" x="291" y="240" width="52" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="changeAtmosphereStar1:" destination="x1S-fZ-ioX" eventType="touchUpInside" id="RWx-b3-5a8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eqn-oT-DA4"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bQL-nO-z3U" firstAttribute="top" secondItem="YYp-nv-5q0" secondAttribute="bottom" constant="8" id="3Sb-IW-A53"/>
+                            <constraint firstItem="R2f-Sx-gmB" firstAttribute="leading" secondItem="P0B-2O-dsx" secondAttribute="trailing" constant="8" id="3Sr-Hi-OcD"/>
+                            <constraint firstItem="BbU-We-2LM" firstAttribute="top" secondItem="ZAD-mO-XEc" secondAttribute="bottom" constant="8" id="4vb-1G-cEB"/>
+                            <constraint firstItem="oyu-7U-sFU" firstAttribute="top" secondItem="1Nl-Ef-YOu" secondAttribute="bottom" constant="56" id="5vZ-TZ-0sY"/>
+                            <constraint firstItem="oBm-oN-dcb" firstAttribute="top" secondItem="YYp-nv-5q0" secondAttribute="bottom" constant="8" id="7gS-Bj-BJD"/>
+                            <constraint firstItem="qB0-ek-isV" firstAttribute="top" secondItem="ZfH-zQ-2Sf" secondAttribute="bottom" constant="8" id="8sP-LR-dnz"/>
+                            <constraint firstItem="qB0-ek-isV" firstAttribute="leading" secondItem="Ygo-QQ-ADl" secondAttribute="trailing" constant="8" id="CBU-Fi-2Nw"/>
+                            <constraint firstItem="W6H-nc-tcq" firstAttribute="leading" secondItem="BbU-We-2LM" secondAttribute="trailing" constant="8" id="D3g-5Y-Lwo"/>
+                            <constraint firstItem="ZAD-mO-XEc" firstAttribute="centerX" secondItem="UaT-iv-8iT" secondAttribute="centerX" id="DRN-FN-4of"/>
+                            <constraint firstItem="P0B-2O-dsx" firstAttribute="leading" secondItem="eqn-oT-DA4" secondAttribute="leading" constant="51" id="DkL-eF-Sza"/>
+                            <constraint firstItem="R2f-Sx-gmB" firstAttribute="top" secondItem="ZAD-mO-XEc" secondAttribute="bottom" constant="8" id="FSP-gk-GvK"/>
+                            <constraint firstItem="OAT-6g-n9C" firstAttribute="leading" secondItem="qB0-ek-isV" secondAttribute="trailing" constant="8" id="GQc-Q0-RzM"/>
+                            <constraint firstItem="Qww-q3-MA3" firstAttribute="leading" secondItem="W6H-nc-tcq" secondAttribute="trailing" constant="8" id="GfI-pz-Ome"/>
+                            <constraint firstItem="TK6-0g-tHu" firstAttribute="leading" secondItem="eqn-oT-DA4" secondAttribute="leading" constant="51" id="Jsb-dn-4gb"/>
+                            <constraint firstItem="ZfH-zQ-2Sf" firstAttribute="top" secondItem="Sqo-sH-Gzb" secondAttribute="bottom" constant="18" id="Lm0-zj-4Qi"/>
+                            <constraint firstItem="P0B-2O-dsx" firstAttribute="top" secondItem="eqn-oT-DA4" secondAttribute="top" constant="58" id="MBY-bO-nVV"/>
+                            <constraint firstItem="oyu-7U-sFU" firstAttribute="leading" secondItem="OAT-6g-n9C" secondAttribute="trailing" constant="8" id="NMw-ni-Ueg"/>
+                            <constraint firstItem="W6H-nc-tcq" firstAttribute="top" secondItem="ZAD-mO-XEc" secondAttribute="bottom" constant="8" id="Otl-oa-u7P"/>
+                            <constraint firstItem="TK6-0g-tHu" firstAttribute="top" secondItem="ouN-jk-SjW" secondAttribute="bottom" constant="56" id="P96-XV-Frd"/>
+                            <constraint firstItem="1Nl-Ef-YOu" firstAttribute="top" secondItem="Qww-q3-MA3" secondAttribute="bottom" constant="56" id="SMv-7a-8KJ"/>
+                            <constraint firstItem="YYp-nv-5q0" firstAttribute="top" secondItem="R2f-Sx-gmB" secondAttribute="bottom" constant="18" id="Sxh-qG-udB"/>
+                            <constraint firstItem="Ygo-QQ-ADl" firstAttribute="leading" secondItem="TK6-0g-tHu" secondAttribute="trailing" constant="8" id="Tck-nE-adj"/>
+                            <constraint firstItem="1Nl-Ef-YOu" firstAttribute="leading" secondItem="oBm-oN-dcb" secondAttribute="trailing" constant="8" id="TsR-e3-WKZ"/>
+                            <constraint firstItem="OAT-6g-n9C" firstAttribute="top" secondItem="ZfH-zQ-2Sf" secondAttribute="bottom" constant="8" id="Us8-CM-Ptz"/>
+                            <constraint firstItem="ouN-jk-SjW" firstAttribute="top" secondItem="P0B-2O-dsx" secondAttribute="bottom" constant="56" id="Zy8-4w-noN"/>
+                            <constraint firstItem="BbU-We-2LM" firstAttribute="leading" secondItem="R2f-Sx-gmB" secondAttribute="trailing" constant="8" id="a0r-cs-363"/>
+                            <constraint firstItem="Sqo-sH-Gzb" firstAttribute="top" secondItem="YYp-nv-5q0" secondAttribute="bottom" constant="8" id="bK2-vg-8oj"/>
+                            <constraint firstItem="ZAD-mO-XEc" firstAttribute="top" secondItem="eqn-oT-DA4" secondAttribute="top" constant="20" id="dh0-fT-ufh"/>
+                            <constraint firstItem="Sqo-sH-Gzb" firstAttribute="leading" secondItem="bQL-nO-z3U" secondAttribute="trailing" constant="8" id="h74-dr-ks1"/>
+                            <constraint firstItem="eqn-oT-DA4" firstAttribute="trailing" secondItem="1Nl-Ef-YOu" secondAttribute="trailing" constant="50" id="kms-n4-wac"/>
+                            <constraint firstItem="Ygo-QQ-ADl" firstAttribute="top" secondItem="ZfH-zQ-2Sf" secondAttribute="bottom" constant="8" id="n0j-dU-TL8"/>
+                            <constraint firstItem="bQL-nO-z3U" firstAttribute="leading" secondItem="ouN-jk-SjW" secondAttribute="trailing" constant="8" id="nGb-h1-l1S"/>
+                            <constraint firstItem="Qww-q3-MA3" firstAttribute="top" secondItem="eqn-oT-DA4" secondAttribute="top" constant="58" id="nsF-gz-MBq"/>
+                            <constraint firstItem="eqn-oT-DA4" firstAttribute="trailing" secondItem="oyu-7U-sFU" secondAttribute="trailing" constant="50" id="o1R-3g-NBn"/>
+                            <constraint firstItem="ZfH-zQ-2Sf" firstAttribute="centerX" secondItem="UaT-iv-8iT" secondAttribute="centerX" id="oCK-dH-XtG"/>
+                            <constraint firstItem="ouN-jk-SjW" firstAttribute="leading" secondItem="eqn-oT-DA4" secondAttribute="leading" constant="51" id="oRQ-Qc-EP3"/>
+                            <constraint firstItem="oBm-oN-dcb" firstAttribute="leading" secondItem="Sqo-sH-Gzb" secondAttribute="trailing" constant="8" id="qsF-m4-Vpu"/>
+                            <constraint firstItem="eqn-oT-DA4" firstAttribute="trailing" secondItem="Qww-q3-MA3" secondAttribute="trailing" constant="50" id="rsb-uD-jqx"/>
+                            <constraint firstItem="YYp-nv-5q0" firstAttribute="centerX" secondItem="UaT-iv-8iT" secondAttribute="centerX" id="x6B-Lh-iD3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QC9-Ad-jft"/>
+                    <connections>
+                        <outletCollection property="coffeeButton" destination="P0B-2O-dsx" collectionClass="NSMutableArray" id="2nm-hL-6V6"/>
+                        <outletCollection property="coffeeButton" destination="R2f-Sx-gmB" collectionClass="NSMutableArray" id="EG9-mb-DBc"/>
+                        <outletCollection property="coffeeButton" destination="BbU-We-2LM" collectionClass="NSMutableArray" id="O3k-aY-hqq"/>
+                        <outletCollection property="coffeeButton" destination="W6H-nc-tcq" collectionClass="NSMutableArray" id="vuh-gC-oMd"/>
+                        <outletCollection property="coffeeButton" destination="Qww-q3-MA3" collectionClass="NSMutableArray" id="CUO-vQ-c0M"/>
+                        <outletCollection property="serviceButton" destination="ouN-jk-SjW" collectionClass="NSMutableArray" id="5N4-we-cZd"/>
+                        <outletCollection property="serviceButton" destination="bQL-nO-z3U" collectionClass="NSMutableArray" id="q97-cI-1Xa"/>
+                        <outletCollection property="serviceButton" destination="Sqo-sH-Gzb" collectionClass="NSMutableArray" id="bFK-17-9Fr"/>
+                        <outletCollection property="serviceButton" destination="oBm-oN-dcb" collectionClass="NSMutableArray" id="odT-QA-K7w"/>
+                        <outletCollection property="serviceButton" destination="1Nl-Ef-YOu" collectionClass="NSMutableArray" id="1Rk-QI-fxf"/>
+                        <outletCollection property="atmosphereButton1" destination="TK6-0g-tHu" collectionClass="NSMutableArray" id="kq5-Cg-txu"/>
+                        <outletCollection property="atmosphereButton1" destination="Ygo-QQ-ADl" collectionClass="NSMutableArray" id="2gs-5Y-cjs"/>
+                        <outletCollection property="atmosphereButton1" destination="qB0-ek-isV" collectionClass="NSMutableArray" id="qCN-eR-ftF"/>
+                        <outletCollection property="atmosphereButton1" destination="OAT-6g-n9C" collectionClass="NSMutableArray" id="C50-wL-hrs"/>
+                        <outletCollection property="atmosphereButton1" destination="oyu-7U-sFU" collectionClass="NSMutableArray" id="aWB-5P-DzD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-Ac-KYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985.49618320610682" y="-35.211267605633807"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="figure.stand" catalog="system" width="74" height="128"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
